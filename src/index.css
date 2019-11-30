@@ -5,9 +5,58 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #e0ebe8;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+@font-face {
+  font-family: 'Mafakanav';
+  src: url('./Assets/Fonts/Mafakanev.otf')  format('truetype')
+}
+@font-face {
+font-family: 'BeforeRain';
+src: url('./Assets/Fonts/BeforeTheRain.ttf')  format('truetype')
+}
+@font-face {
+font-family: 'GoodTimes';
+src: url('./Assets/Fonts/goodTimes.ttf')  format('truetype')
+}
+@font-face {
+  font-family: 'IndianFont';
+  src: url('./Assets/Fonts/indianFont.TTF')  format('truetype')
+}
+@font-face {
+  font-family: 'SulphurPoint';
+  src: url('./Assets/Fonts/SulphurPoint.ttf')  format('truetype')
+}
+
+.navbar .navbar-dark{
+  border-radius: 0 0 10px 10px;
+    border-bottom: 5px solid #fff;
+}
+.navbar-dark .navbar-nav .nav-link{
+  font-weight: 600 !important;
+  color: #fff !important;
+  font-family: 'SulphurPoint',Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:active{
+ text-decoration: underline;
+}
+.navbar-dark .navbar-brand{
+    font-family: 'Mafakanav',Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+.container{
+  box-shadow: #ccc 0px 0px 15px 2px;
+  padding-bottom: 40px;
+  border-radius:0 0 5px 5px;
+}
+.mt-10{
+  margin-top:10px;
 }

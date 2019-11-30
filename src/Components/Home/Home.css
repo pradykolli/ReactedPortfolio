@@ -1,0 +1,55 @@
+.banner{
+    position: relative;
+    top: -145px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+h1{
+    text-align: center;
+    font-family: 'Mafakanav',Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+    font-weight: bolder;
+    padding:10px;
+    color: #545454 
+}
+h2,h3,h4,h5,h6{
+    text-align: center;
+    font-family: 'SulphurPoint',Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+    font-weight: bolder;
+    padding:10px;
+    color: #545454
+}
+.webDeveloperSection{
+    width:80%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    background: #e0ebe8;
+    padding:20px;
+    border-radius: 25px;
+}
+.imageWrapper{
+    width:250px;
+    height:250px;
+}
+.imageWrapper img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid #e0ebe8;
+    margin: 0 auto;
+}
+.iconWrapper {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    font-size: 4rem;
+    color: #343a40;
+}
+
+.iconWrapper > * {
+    padding: 10px;
+    
+}
