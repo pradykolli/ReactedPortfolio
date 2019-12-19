@@ -3,7 +3,8 @@ import React from 'react'
 import logo from '../../Assets/Images/logo1.jpg'
 import { Row, Col } from 'reactstrap';
 import './Home.css'
-function Home(){
+import ContentCards from '../ContentCards/ContentCards';
+function Home() {
     return (
         <div>
             <Row>
@@ -17,14 +18,13 @@ function Home(){
             </Row>
             <Row>
                 <Col md="8">
-                    <div className="webDeveloperSection">
-                        <h1>Hi.</h1>
-                        <p>
-                            I'm a Web designer / developer based in Salt Lake City, UT.
-                            I'm an experienced software engineer with a demonstrated history of working in the information technology and services industry.
-                            Skilled in Html5, Javascript, CSS3, Sass, Bootstrap 2.x-4.x, React, Angular 2.0. 
-                        </p>
-                    </div>
+                    <ContentCards 
+                    cardTitle = "Hi" 
+                    cardContent = "I'm a Web designer / developer based in Salt Lake City, UT.
+                    I'm an experienced software engineer with a demonstrated history of working in the information technology and services industry.
+                    Skilled in Html5, Javascript, CSS3, Sass, Bootstrap 2.x-4.x, React, Angular 2.0.">
+                        Yo Yo!!
+                    </ContentCards>
                 </Col>
                 <Col md="4">
                     <div className="imageWrapper">
@@ -44,26 +44,28 @@ function Home(){
                     </div>
                 </Col>
                 <Col md="8">
-                    <div className="webDeveloperSection">
-                        <h1>As a designer.</h1>
-                        <p>
-                            I'm a Web designer / developer based in Salt Lake City, UT.
-                            I'm an experienced software engineer with a demonstrated history of working in the information technology and services industry.
-                            Skilled in Html5, Javascript, CSS3, Sass, Bootstrap 2.x-4.x, React, Angular 2.0. 
-                        </p>
-                    </div>
+                    <ContentCards 
+                        cardTitle = "As a designer" 
+                        cardContent = "I've designed customized layout for a very complex application which is responsive for all available devices.
+                        I was involved in key designing aspects which involved universal usability of application and the applicaition to repsond accordingly.
+                        I have grown familiarity with mutiple designing tools such as Sketch, Axure, Adobe XD, Mockups.
+                        I'm well aware of tools such as Adobe Illustrator, Adobe Photoshop CS6 and Adobe Lightroom.">
+                            Yo Yo!!
+                    </ContentCards>
                 </Col>
-            </Row> 
+            </Row>
             <Row className="mt-10">
                 <Col md="8">
-                    <div className="webDeveloperSection">
-                        <h1>As a developer.</h1>
-                        <p>
-                            I'm a Web designer / developer based in Salt Lake City, UT.
-                            I'm an experienced software engineer with a demonstrated history of working in the information technology and services industry.
-                            Skilled in Html5, Javascript, CSS3, Sass, Bootstrap 2.x-4.x, React, Angular 2.0. 
-                        </p>
-                    </div>
+                    <ContentCards 
+                        cardTitle = "As a developer" 
+                        cardContent = "Keeping in mind the responsive design and Code reuability,
+                        I've written readable and efficient code while following the company's coding standards.
+                        Writing accessible code wherever possible and necessary was well addressed.
+                        Worked on multiple frameworks such as React, Node+Ejs, Angular 2.x with Material Design, Bootstrap 2.x-4.x, Microsoft Fabric UI.
+                        Modularity was always primarily considered as a key aspect of coding.
+                        Comfortable with Css, Sass.">
+                            Yo Yo!!
+                    </ContentCards>
                 </Col>
                 <Col md="4">
                     <div className="iconWrapper">
@@ -76,8 +78,8 @@ function Home(){
                         <i className="fab fa-accessible-icon"></i>
                     </div>
                 </Col>
-            </Row> 
-        </div>  
+            </Row>
+        </div>
     );
 }
 

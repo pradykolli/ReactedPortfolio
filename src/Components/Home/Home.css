@@ -21,15 +21,7 @@ h2,h3,h4,h5,h6{
     padding:10px;
     color: #545454
 }
-.webDeveloperSection{
-    width:80%;
-    text-align: center;
-    margin: 0 auto;
-    font-size: 1.2rem;
-    background: #e0ebe8;
-    padding:20px;
-    border-radius: 25px;
-}
+
 .imageWrapper{
     width:250px;
     height:250px;
