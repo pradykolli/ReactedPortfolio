@@ -1,0 +1,10 @@
+.stars:before {
+    content: "\2605";
+    position: absolute;
+    font-size: 1rem;
+    color: #545454;
+ }
+ .stars{
+    padding-left: 15px;
+    text-align: right;
+ }
