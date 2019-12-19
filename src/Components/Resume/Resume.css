@@ -1,0 +1,48 @@
+.leftCol{
+    border-right:1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+    margin-top: 10px;
+}
+.backgroundLayer{
+    background-image: url(../../Assets/Images/banner.jpg);
+    background-repeat: repeat-y;
+    background-clip: border-box;
+    width: 100%;
+    height: 100vmax;  
+    position: relative;
+    background-position-x: 67%;
+    opacity: 0.2;
+}
+.overlayLayer{
+    position: absolute;
+    top: 10px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.imageWrapper{
+    width:250px;
+    height:250px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.imageWrapper img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid #e0ebe8;
+    margin: 0 auto;
+}
+.nameTitle{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+.description{
+    padding-top: 5px;
+}
+ul > li{
+    list-style: circle;
+    text-align: left;
+}
