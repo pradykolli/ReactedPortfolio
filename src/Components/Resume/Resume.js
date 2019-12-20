@@ -12,7 +12,7 @@ function Resume() {
                     <div className="backgroundLayer"></div>
                     <div className="overlayLayer">
                         <div className="imageSection">
-                            <div className="imageWrapper">
+                            <div className="imageWrapper grayscale">
                                 <img src={logo} alt="Pradeep Kolli" />
                             </div>
                             <h1 className="nameTitle">Pradeep Kolli</h1>

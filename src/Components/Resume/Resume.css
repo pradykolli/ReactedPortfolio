@@ -25,6 +25,11 @@
     height:250px;
     margin: 0 auto;
     margin-bottom: 20px;
+    
+}
+.imageWrapper.grayscale{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
 .imageWrapper img{
     width: 100%;
