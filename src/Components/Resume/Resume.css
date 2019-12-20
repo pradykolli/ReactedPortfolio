@@ -60,3 +60,28 @@ ul > li{
 i{
     font-size: 0.8rem;
 }
+.description > h4,
+.description > h5{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.description > p{
+    margin: 0;
+    float: left;
+    text-align: left;
+    padding: 5px;
+}
+.description > p:nth-child(2n+1){
+    width: 35%;
+} 
+.description > p:nth-child(2n+2){
+    width: 65%;
+} 
+.description > p > i{
+    float: right;
+    padding-top: 8px;
+}
+.description > a{
+    cursor: pointer;
+}
