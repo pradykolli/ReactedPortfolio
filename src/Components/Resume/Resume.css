@@ -57,6 +57,7 @@
     float: right;
     width: 50%;
     margin-bottom: 0;
+    padding-right: 15px;
 }
 ul > li{
     list-style: circle;
@@ -89,4 +90,10 @@ i{
 }
 .description > a{
     cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 320px)  {
+    .rightCol{
+        margin-top: 360px;
+    }
 }

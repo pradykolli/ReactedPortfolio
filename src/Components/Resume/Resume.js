@@ -69,7 +69,7 @@ function Resume() {
                     </div>
                 </Col>
                 {/* Code for the right article part */}
-                <Col md="8">
+                <Col md="8" className="rightCol">
                     <div className="employmentHistory">
                         <h3 className="nameTitle">Employment History</h3>
                         <div className="description">
@@ -121,6 +121,7 @@ function Resume() {
                                 <li><a href="https://pradykolli.github.io/BuildingWebapp-MDB/" rel="noopener noreferrer" target="_blank">Building Web Apps - Website using a Material Design Bootstrap</a></li>
                                 <li><a href="https://pradykolli.github.io/portfolio/index.html" rel="noopener noreferrer" target="_blank">Portfolio - Website using HTML, CSS, JS, JQuery</a></li>
                                 <li><a href="https://pradykolli.github.io/GuestIn/index.html" rel="noopener noreferrer" target="_blank">GuestIn - Website using HTML, CSS, JS, JQuery, Bootsrap 4.0</a></li>
+                                <li><a href="https://pradystoshoplist.herokuapp.com/" rel="noopener noreferrer" target="_blank">ShoppingToDoList - Website using MERN Stack.</a></li>
                             </ul>
                         </div>
                     </div>
