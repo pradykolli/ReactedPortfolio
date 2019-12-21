@@ -10,17 +10,17 @@ import { Button, Form, FormGroup, Label, Input, Row, Col } from 'reactstrap';
 function ContactMe(props) {
     const items = [
         {
-          src: 'public/Images/banner.jpg',
+          src: 'app/src/Assets/Images/banner.jpg',
           altText: 'Slide 1',
           caption: 'Slide 1'
         },
         {
-          src: 'public/Images/logo1.jpg',
+          src: 'app/src/Assets/Images/logo1.jpg',
           altText: 'Slide 2',
           caption: 'Slide 2'
         },
         {
-          src: 'public/Images/logo4.jpg',
+          src: 'app/src/Assets/Images/logo4.jpg',
           altText: 'Slide 3',
           caption: 'Slide 3'
         }
