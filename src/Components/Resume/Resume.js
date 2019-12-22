@@ -118,10 +118,12 @@ function Resume() {
                         <h3 className="nameTitle">Previous Builds</h3>
                         <div className="description">
                             <ul>
-                                <li><a href="https://pradykolli.github.io/BuildingWebapp-MDB/" rel="noopener noreferrer" target="_blank">Building Web Apps - Website using a Material Design Bootstrap</a></li>
-                                <li><a href="https://pradykolli.github.io/portfolio/index.html" rel="noopener noreferrer" target="_blank">Portfolio - Website using HTML, CSS, JS, JQuery</a></li>
-                                <li><a href="https://pradykolli.github.io/GuestIn/index.html" rel="noopener noreferrer" target="_blank">GuestIn - Website using HTML, CSS, JS, JQuery, Bootsrap 4.0</a></li>
-                                <li><a href="https://pradystoshoplist.herokuapp.com/" rel="noopener noreferrer" target="_blank">ShoppingToDoList - Website using MERN Stack.</a></li>
+                                <li><a href="https://pradykolli.github.io/BuildingWebapp-MDB/" title="https://pradykolli.github.io/BuildingWebapp-MDB/" rel="noopener noreferrer" target="_blank">Building Web Apps - Website using a Material Design Bootstrap</a></li>
+                                <li><a href="https://pradykolli.github.io/portfolio/index.html" title="https://pradykolli.github.io/portfolio/index.html" rel="noopener noreferrer" target="_blank">Portfolio - Website using HTML, CSS, JS, JQuery</a></li>
+                                <li><a href="https://pradykolli.github.io/GuestIn/index.html" title="https://pradykolli.github.io/GuestIn/index.html" rel="noopener noreferrer" target="_blank">GuestIn - Website using HTML, CSS, JS, JQuery, Bootsrap 4.0</a></li>
+                                <li><a href="https://pradystoshoplist.herokuapp.com/" title="https://pradystoshoplist.herokuapp.com/" rel="noopener noreferrer" target="_blank">ShoppingToDoList - Website using MERN Stack.</a></li>
+                                <li><a href="https://kolli-portfolio.herokuapp.com/" title="https://kolli-portfolio.herokuapp.com/" rel="noopener noreferrer" target="_blank">Potfolio - Website using Ejs, Express, Node.</a></li>
+                                <li><a href="https://fullstack-ejs.herokuapp.com/" title="https://fullstack-ejs.herokuapp.com/" rel="noopener noreferrer" target="_blank">EmptyYourPockets - Website using Ejs, Express, Node, MDB.</a></li>
                             </ul>
                         </div>
                     </div>
