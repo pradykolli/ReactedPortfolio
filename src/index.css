@@ -60,3 +60,6 @@ src: url('./Assets/Fonts/goodTimes.ttf')  format('truetype')
 .mt-10{
   margin-top:10px;
 }
+.carousel img{
+  width: 100%;
+}

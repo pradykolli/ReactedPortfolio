@@ -10,19 +10,19 @@ import { Button, Form, FormGroup, Label, Input, Row, Col } from 'reactstrap';
 function ContactMe(props) {
     const items = [
         {
-          src: 'app/src/Assets/Images/banner.jpg',
+          src: 'Images/banner.jpg',
           altText: 'Slide 1',
-          caption: 'Slide 1'
+          caption: ''
         },
         {
-          src: 'app/src/Assets/Images/logo1.jpg',
+          src: 'Images/logo1.jpg',
           altText: 'Slide 2',
-          caption: 'Slide 2'
+          caption: ''
         },
         {
-          src: 'app/src/Assets/Images/logo4.jpg',
+          src: 'Images/logo4.jpg',
           altText: 'Slide 3',
-          caption: 'Slide 3'
+          caption: ''
         }
       ];
     const [activeIndex, setActiveIndex] = useState(0);
@@ -84,7 +84,7 @@ function ContactMe(props) {
                     </Form>
 
                 </Col>
-                <Col md="6">
+                <Col md="6" className="carousel">
                     <Carousel
                         activeIndex={activeIndex}
                         next={next}
