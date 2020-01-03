@@ -9,14 +9,39 @@ class Game extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            generatedNumbers : []
+            count : 0,
+            generatedNumbers : [],
+            generatedDivs : []
         };
         this.generateNumber = this.generateNumber.bind(this);
     } 
     generateNumber(){
-        this.setState({
-            generatedNumbers: [...this.state.generatedNumbers, Math.round(Math.random() * 10)]
-        })
+        if(this.state.count <= 15){
+            let randomNumber = Math.floor((Math.random() * 25) + 1);
+            for(let i=0; i<this.state.generatedNumbers.length; i++){
+                if(this.state.generatedNumbers.includes(randomNumber)){
+                    randomNumber = Math.floor((Math.random() * 25) + 1)
+                }
+                else{
+                    continue
+                }
+            }
+            this.setState({
+                generatedNumbers: [...this.state.generatedNumbers, randomNumber]
+            })
+            this.setState({
+                generatedDivs : [...this.state.generatedDivs, <div className="generatedStack" key={this.state.count}>{this.state.generatedNumbers.slice(this.state.count-1, this.state.count+1)}</div>]
+            })
+            this.setState({
+                count: this.state.count + 1
+            })
+            console.log(this.state.generatedNumbers)
+            
+        }
+        else{
+            alert("Yo game's done Yo!");
+        }
+
     } 
     render(){
         return (
@@ -29,8 +54,7 @@ class Game extends Component{
                         <button type="button"color="success" onClick={this.generateNumber}>Generate Number</button>
                     </Col>
                     <Col md="12">
-                        {this.state.generatedNumbers}
-                        {console.log(this.state.generatedNumbers)}
+                        {this.state.generatedDivs}
                     </Col>
                     <Col md="12" className="mt10">
                         <div className="boxLayout">

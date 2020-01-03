@@ -5,6 +5,7 @@ class GridBox extends Component{
     constructor(props){
         super(props)
         this.gridSize = props.gridSize
+        this.addGrids = this.addGrids.bind(this)
     }
     shuffle(array) {
         array.sort(() => Math.random() - 0.5);
@@ -16,7 +17,6 @@ class GridBox extends Component{
             gridNumbers.push(i)
         }
         this.shuffle(gridNumbers)
-        console.log(gridNumbers)
         for (var j = 0; j < this.props.gridSize; j++) {
             grids.push( 
             <div className="gridBox" key={j} id={gridNumbers[j]}>

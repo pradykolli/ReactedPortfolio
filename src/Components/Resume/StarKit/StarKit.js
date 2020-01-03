@@ -5,6 +5,7 @@ class StarKit extends Component{
     constructor(props){
         super(props)
         this.number = props.number
+        this.addStars = this.addStars.bind(this)
     }
     addStars() {
         var stars = [];
