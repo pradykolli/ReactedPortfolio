@@ -51,7 +51,7 @@ class Game extends Component{
                 <h1>Lets play some Bingo!</h1>
                 <Row>
                     <Col md="12" className="text-center mt10">
-                        <button type="button"color="success" onClick={this.generateNumber}>Generate Number</button>
+                        <button className="btn btn-success" type="button"color="success" onClick={this.generateNumber}>Generate Number</button>
                     </Col>
                     <Col md="12">
                         {this.state.generatedDivs}
