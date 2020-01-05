@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Row, Col } from 'reactstrap'
 import './Game.css'
-import GridBox from './GridBox'
+// import GridBox from './GridBox'
 
 
 
@@ -10,11 +10,30 @@ class Game extends Component{
         super(props);
         this.state = {
             count : 0,
+            startGame : false,
             generatedNumbers : [],
-            generatedDivs : []
+            generatedDivs : [],
+            gridDivs: [],
+            gridNumbers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25].sort(() => Math.random() - 0.5)
         };
         this.generateNumber = this.generateNumber.bind(this);
+        this.generateGrids = this.generateGrids.bind(this);
     } 
+    generateGrids(){
+        var grids = []
+        for (var j = 0; j < this.state.gridNumbers.length; j++) {
+            grids.push( 
+            <div className="gridBox" key={j} id={this.state.gridNumbers[j]}>
+                <span>{this.state.gridNumbers[j]}</span>
+            </div>
+            );
+        }
+        this.setState({
+            gridDivs : grids,
+            startGame : true
+        })
+        return grids
+    }
     generateNumber(){
         if(this.state.count <= 15){
             let randomNumber = Math.floor((Math.random() * 25) + 1);
@@ -44,21 +63,32 @@ class Game extends Component{
 
     } 
     render(){
+        let buttonelement
+        if(!this.state.startGame){
+            buttonelement = <Col md="12" className="text-center mt10">
+                <button className="btn btn-success" type="button"color="success" onClick={this.generateGrids}>Let's Get Started Shall We?</button>
+            </Col>
+        }
+        else{
+            buttonelement = <Col md="12" className="text-center mt10">
+            <button className="btn btn-success" type="button"color="success" onClick={this.generateNumber}>Generate Number</button>
+        </Col>
+        }
         return (
             <div>
                 {/* <h1>Page under construction</h1>
                 <Progress animated color="success" value="35" /> */}
                 <h1>Lets play some Bingo!</h1>
                 <Row>
-                    <Col md="12" className="text-center mt10">
-                        <button className="btn btn-success" type="button"color="success" onClick={this.generateNumber}>Generate Number</button>
-                    </Col>
-                    <Col md="12">
+                    {buttonelement}
+                    <Col md="12" className="generatedBoxLayout">
                         {this.state.generatedDivs}
                     </Col>
                     <Col md="12" className="mt10">
                         <div className="boxLayout">
-                            <GridBox gridSize="25"></GridBox>
+                            {/* <GridBox gridSize="25"></GridBox> */}
+                            {this.state.gridDivs}
+                            
                         </div>
                     </Col>
                 </Row>
