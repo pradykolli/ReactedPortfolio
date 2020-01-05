@@ -13,7 +13,9 @@ class Game extends Component{
             startGame : false,
             generatedNumbers : [],
             generatedDivs : [],
-            gridDivs: [],
+            gridDivs: [<div className="gridBox">
+                            <span>"Let's Play"</span>
+                        </div>],
             gridNumbers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25].sort(() => Math.random() - 0.5)
         };
         this.generateNumber = this.generateNumber.bind(this);
@@ -58,7 +60,7 @@ class Game extends Component{
             
         }
         else{
-            alert("Yo game's done Yo!");
+            alert("Sorry!! You have lost the game. ");
         }
 
     } 
