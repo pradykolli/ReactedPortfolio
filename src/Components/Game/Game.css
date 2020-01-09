@@ -19,6 +19,21 @@
     text-align: center;
     vertical-align: middle;
 }
+.boxLayout .gridBoxGreen{
+    width: calc(90% / 5);
+    margin: 1% 1% 1% 1%;
+    min-height: calc(350px / 5);
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    background: #5ca08e!important;
+    border:none!important;
+    color:#fff!important;
+    font-weight: bold;
+}
 .boxLayout .gridBox:hover{
     box-shadow: 1px 1px 5px 1px #ccc;
 }
@@ -50,4 +65,8 @@
 }
 .gridNumberBtn:focus{
     border:none!important;
+}
+.gridBoxGreen .gridNumberBtn{
+    color:#fff!important;
+    font-weight: bold;
 }
