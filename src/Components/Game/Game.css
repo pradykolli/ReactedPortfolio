@@ -4,7 +4,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0px 2px 21px 3px #eaeaea;
-    min-height: 450px;
+    min-height: 470px;
     line-height: 70px;
 }
 
@@ -41,4 +41,13 @@
     margin: 0 auto;
     border-radius: 5px;
     line-height: 70px;
+}
+.gridNumberBtn{
+    background: none!important;
+    border:none!important;
+    width: 100%;
+    height: 100%;
+}
+.gridNumberBtn:focus{
+    border:none!important;
 }

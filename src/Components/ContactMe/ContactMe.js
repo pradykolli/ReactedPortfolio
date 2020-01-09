@@ -6,7 +6,7 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
-import { Button, Form, FormGroup, Label, Input, Row, Col } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 function ContactMe(props) {
     const items = [
         {
@@ -62,7 +62,7 @@ function ContactMe(props) {
             <h1>Get in touch with us</h1>
             <Row>
                 <Col md="6" className="leftCol">
-                    <Form>
+                    {/* <Form>
                         <FormGroup>
                             <Label for="fname">First Name</Label>
                             <Input type="text" name="fname" id="fname" placeholder="Pradeep" />
@@ -81,8 +81,74 @@ function ContactMe(props) {
                         </FormGroup>
 
                         <Button><i className="fas fa-paper-plane"></i>  Send Mail</Button>
-                    </Form>
-
+                    </Form> */}
+                     <div className="contactBlock">
+                        <form>
+                            <div className="form-group">
+                                <label for="firstName">First name</label>
+                                <div className="inputWrapper">
+                                    <input type="text" className="form-control" id="firstName" required aria-required="true" placeholder="first name goes here"/>
+                                    <span><i className="fa fa-user" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div className="form-group">
+                                <label for="lastName">Last name</label>
+                                <div className="inputWrapper">
+                                    <input type="text" className="form-control" id="lastName" required aria-required="true" placeholder="last name goes here"/>
+                                    <span><i className="far fa-user" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div className="form-group">
+                                <label for="email">Email address</label>
+                                <div className="inputWrapper">
+                                    <input type="email" className="form-control" id="email" required aria-required="true" placeholder="email@address.com"/>
+                                    <span><i className="fa fa-envelope" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div className="form-group">
+                                <label for="addressOne">Address Line 1</label>
+                                <div className="inputWrapper">
+                                    <input type="text" className="form-control" id="addressOne" required aria-required="true" placeholder="Address line 1 goes here"/>
+                                    <span><i className="fas fa-home" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div className="form-group">
+                                <label for="addressTwo">Address Line 2</label>
+                                <div className="inputWrapper">
+                                    <input type="text" className="form-control" id="addressTwo" required aria-required="true" placeholder="Address line 2 goes here"/>
+                                    <span><i className="fas fa-road" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div className="form-group">
+                                <label for="city">City</label>
+                                <div className="inputWrapper">
+                                    <input type="text" className="form-control" id="city" required aria-required="true" placeholder="City goes here"/>
+                                    <span><i className="fas fa-city" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div className="form-group">
+                                <label for="zipCode">Zip Code</label>
+                                <div className="inputWrapper">
+                                    <input type="number" size="6" className="form-control" id="zipCode" required aria-required="true" placeholder="Zipcode goes here"/>
+                                    <span><i className="fas fa-map-marker-alt" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div className="form-group">
+                                <label for="country">Country</label>
+                                <div className="inputWrapper">
+                                    <input type="text" className="form-control" id="country" required aria-required="true" placeholder="Country goes here"/>
+                                    <span><i className="fas fa-flag-usa" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div className="form-group full-width">
+                                <label for="query">Please write to us</label>
+                                <textarea name="query" className="form-control" id="query" cols="30" rows="5"  required aria-required="true" placeholder="Query you want us to answer"></textarea>  
+                            </div>
+                            <div className="form-group full-width">
+                                    <button className="btn btn-success"><i class="fas fa-paper-plane mr5" aria-hidden="true"></i><span class="text-upper">    Send</span></button>
+                            </div>
+                        </form>
+                    </div>
                 </Col>
                 <Col md="6" className="carousel">
                     <Carousel

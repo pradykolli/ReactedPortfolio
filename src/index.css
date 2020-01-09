@@ -63,3 +63,36 @@ src: url('./Assets/Fonts/goodTimes.ttf')  format('truetype')
 .carousel img{
   width: 100%;
 }
+
+
+.inputWrapper{
+	position: relative;
+}
+.inputWrapper input{
+	padding-left: 40px;
+}
+.inputWrapper span{
+	width: 38px;
+	height:38px;
+	background: #f4f4f4;
+	color: #333333;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1px solid #cccccc;
+	border-radius: 4px 0 0 4px;
+	text-align: center;
+	padding-top:5px;
+}
+.contactBlock .form-group {
+    width: 49%;
+    float: left;
+    margin-left: 2%;
+}
+.contactBlock .form-group:nth-child(odd) {
+    margin-left: 0%!important;
+}
+.form-group.full-width{
+	width: 100% !important;
+	margin-left: 0!important;
+}
