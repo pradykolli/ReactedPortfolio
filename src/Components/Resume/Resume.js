@@ -73,6 +73,35 @@ function Resume() {
                     <div className="employmentHistory">
                         <h3 className="nameTitle">Employment History</h3>
                         <div className="description">
+                            <h4>Northwest Missouri State University. 2018-2019</h4>
+                            <h5><strong>Frontend developer (React). 2018-2019</strong></h5>
+                            <h6>Portfolio<br/>
+                                <i>An exhibition of my knowledge on React framework. This website is totally responsive and cross browser compatible. This consists multiple pages which were composed by many subcomponents. A list of my previous builds and work samples are mentioned under “Resume” Tab. </i>
+                            </h6>
+                            <ul>
+                                <li>Designed and developed responsive front-end screens using React, HTML5, CSS3, JavaScript, and Bootstrap. </li>
+                                <li>Created React JS components and managed State and props.  </li>
+                                <li>Worked on Forms, Events, Keys, Router and Animations. </li>
+                                <li>Worked with the ReactStrap library for the designing purpose while creating the functional components which can be reused in future. </li>
+                                <li>Managed the dependency packages by NPM. </li>
+                            </ul>
+                        </div>
+                        <div className="description">
+                            <h4>Northwest Missouri State University. 2018-2019</h4>
+                            <h5><strong>Frontend developer (React). 2018-2019</strong></h5>
+                            <h6>ShoppingList <a href="https://pradystoshoplist.herokuapp.com/">https://pradystoshoplist.herokuapp.com/</a><br/>
+                                <i>A React application to add and delete items from your “To shop” list. Best usage: Groceries, Holiday Season Shopping list etc.</i>
+                            </h6>
+                            <ul>
+                                <li>Developed webpages using HTML5, CSS3, JavaScript, jQuery, ReactJS, NodeJS. </li>
+                                <li>Worked with Redux while working with the CRUD operations like GET, POST, PUT and DELETE methods</li>
+                                <li>Built Interactive Lists from the scratch without using any library to delete and edit an existing item in the list.</li>
+                                <li>Developed MERN Stack from scratch including Mongo DB server (Mongo Atlas Connector) setup and Express JS server development.</li>
+                                <li>Worked with the ReactStrap library for the designing purpose.</li>
+                                <li>Designed and implemented server-side RESTful web services using NodeJS and Express JS and handled communication to the client side (React JS) using JSON.</li>
+                            </ul>
+                        </div>
+                        <div className="description">
                             <h4>Infosys</h4>
                             <h5><strong>UI/UX developer - Senior Systems Engineer. 2016-2018</strong></h5>
                             <ul>
