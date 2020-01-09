@@ -59,8 +59,8 @@ class Game extends Component {
     generateGrids() {
         var grids = []
         grids = this.state.gridNumbers.map(gridNumber =>
-            <div className={ this.state.isClicked ? "gridBoxGreen" : "gridBox"} key={gridNumber} id={gridNumber}>
-                <button className = { this.state.isClicked ? "gridNumberBtnGreen" :"gridNumberBtn" } onClick={() => this.onNumberClick(gridNumber)}>
+            <div className="gridBox" key={gridNumber} id={gridNumber}>
+                <button className = "gridNumberBtn"  onClick={() => this.onNumberClick(gridNumber)}>
                     {gridNumber}
                 </button>
             </div>
