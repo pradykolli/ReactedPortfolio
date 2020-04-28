@@ -27,10 +27,10 @@ class Game extends Component {
     
     
     bingo = () => {
-        console.log(this.selectedNumbers)
+        // console.log(this.selectedNumbers)
         for(var i = 0; i < this.selectedNumbers.length; i++ ){
             for(var j = 0; j < this.boxNumbers.length; j++){
-                console.log(this.selectedNumbers[i] , this.boxNumbers[j], this.match)
+                // console.log(this.selectedNumbers[i] , this.boxNumbers[j], this.match)
                 if(this.selectedNumbers[i] === this.boxNumbers[j]){
                     this.match += 1
                 }
@@ -38,7 +38,7 @@ class Game extends Component {
         }
         if(this.match === 5){
             alert("BINGO!! Congratulations you have won the game.")
-            console.log(this.boxNumbers, this.selectedNumbers)
+            // console.log(this.boxNumbers, this.selectedNumbers)
         }
         else{
             alert("Better luck next time")
@@ -48,10 +48,11 @@ class Game extends Component {
         
         this.selectedNumbers.push(clickedNumber)
         this.setState({
+            ...this.state,
             isClicked : true
         })
         document.getElementById(clickedNumber).classList.add("gridBoxGreen")
-        console.log(clickedNumber, this.selectedNumbers)
+        // console.log(clickedNumber, this.selectedNumbers)
         if(this.selectedNumbers.length === 5){
             this.bingo()
         }
@@ -72,6 +73,7 @@ class Game extends Component {
         return grids
     }
     generateNumber() {
+        // console.log(this.state)
         if (this.state.count <= 15) {
             let randomNumber = Math.floor((Math.random() * 50) + 1);
             for (let i = 0; i < this.state.generatedNumbers.length; i++) {
@@ -82,16 +84,17 @@ class Game extends Component {
                     continue
                 }
             }
-            this.setState({
-                generatedNumbers: [...this.state.generatedNumbers, randomNumber]
-            })
+            this.setState(prevState => ({...this.state ,
+                generatedNumbers:  prevState.generatedNumbers.concat(randomNumber)
+            }))
             this.boxNumbers.push(randomNumber)
-            this.setState({
-                generatedDivs: [...this.state.generatedDivs, <div className="generatedStack" key={this.state.count}>{this.state.generatedNumbers.slice(this.state.count - 1, this.state.count + 1)}</div>]
-            })
+            // this.setState({
+            //     generatedDivs: [...this.state.generatedDivs, <div className="generatedStack" key={this.state.count}>{this.state.generatedNumbers.slice(this.state.count - 1, this.state.count + 1)}</div>]
+            // })
             this.setState({
                 count: this.state.count + 1
             })
+            // console.log(this.boxNumbers)
             // console.log(this.state.generatedNumbers)
 
         }
@@ -120,7 +123,8 @@ class Game extends Component {
                 <Row>
                     {buttonelement}
                     <Col md="12" className="generatedBoxLayout">
-                        {this.state.generatedDivs}
+                        {/* {this.state.generatedDivs} */}
+                        {this.state.generatedNumbers.map(number => <div key={number} className="generatedStack">{number}</div>)}
                     </Col>
                     <Col md="12" className="mt10">
                         <div className="boxLayout">
