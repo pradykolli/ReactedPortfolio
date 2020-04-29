@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import { Row, Col } from 'reactstrap'
 import './Game.css'
-
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
 class Game extends Component {
     constructor(props) {
         super(props);
+        toast.configure()
         this.state = {
             count: 0,
             startGame: false,
@@ -37,11 +39,15 @@ class Game extends Component {
             }
         }
         if(this.match === 5){
-            alert("BINGO!! Congratulations you have won the game.")
+            toast.success("BINGO!! Congratulations you have won the game.",{
+                position:toast.POSITION.TOP_RIGHT
+            })
             // console.log(this.boxNumbers, this.selectedNumbers)
         }
         else{
-            alert("Better luck next time")
+            toast.warn("The numbers dont match buddy!",{
+                position:toast.POSITION.TOP_RIGHT
+            })
         }
     } 
     onNumberClick = clickedNumber => {
@@ -99,7 +105,9 @@ class Game extends Component {
 
         }
         else {
-            alert("Sorry!! You have lost the game. ");
+            toast.warn("Sorry!! You have lost the game. ",{
+                position:toast.POSITION.TOP_RIGHT
+            })
         }
 
     }

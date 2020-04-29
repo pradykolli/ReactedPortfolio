@@ -1,10 +1,19 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 // import banner from '../../Assets/Images/banner.jpg'
 import logo from '../../Assets/Images/logo1.jpg'
 import { Row, Col } from 'reactstrap';
 import './Home.css'
 import ContentCards from '../ContentCards/ContentCards';
+import {toast} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+toast.configure()
 function Home() {
+    useEffect(() => {
+        toast("Hi there! Welcome!",{
+            position:toast.POSITION.TOP_CENTER,
+            autoClose:3000
+        })
+    })
     return (
         <div>
             <Row>
