@@ -13,7 +13,7 @@ function Home() {
             position:toast.POSITION.TOP_CENTER,
             autoClose:3000
         })
-    })
+    },[])
     return (
         <div>
             <Row>
