@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #e0ebe8;
+  
 }
 
 code {
@@ -56,6 +57,7 @@ src: url('./Assets/Fonts/goodTimes.ttf')  format('truetype')
   box-shadow: #ccc 0px 0px 15px 2px;
   padding-bottom: 40px;
   border-radius:0 0 5px 5px;
+  background: #fff;
 }
 .mt-10{
   margin-top:10px;
@@ -63,7 +65,9 @@ src: url('./Assets/Fonts/goodTimes.ttf')  format('truetype')
 .carousel img{
   width: 100%;
 }
-
+.Toastify__toast{
+  border-radius: 1rem;
+}
 
 .inputWrapper{
 	position: relative;
