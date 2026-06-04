@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/ReactedPortfolio/static/css/main.97f268fd.chunk.css",
-    "main.js": "/ReactedPortfolio/static/js/main.a910e6f7.chunk.js",
-    "main.js.map": "/ReactedPortfolio/static/js/main.a910e6f7.chunk.js.map",
+    "main.js": "/ReactedPortfolio/static/js/main.bfc6076a.chunk.js",
+    "main.js.map": "/ReactedPortfolio/static/js/main.bfc6076a.chunk.js.map",
     "runtime-main.js": "/ReactedPortfolio/static/js/runtime-main.ff106e69.js",
     "runtime-main.js.map": "/ReactedPortfolio/static/js/runtime-main.ff106e69.js.map",
     "static/css/2.bba53750.chunk.css": "/ReactedPortfolio/static/css/2.bba53750.chunk.css",
-    "static/js/2.8f9a07dd.chunk.js": "/ReactedPortfolio/static/js/2.8f9a07dd.chunk.js",
-    "static/js/2.8f9a07dd.chunk.js.map": "/ReactedPortfolio/static/js/2.8f9a07dd.chunk.js.map",
+    "static/js/2.5521b6f2.chunk.js": "/ReactedPortfolio/static/js/2.5521b6f2.chunk.js",
+    "static/js/2.5521b6f2.chunk.js.map": "/ReactedPortfolio/static/js/2.5521b6f2.chunk.js.map",
     "index.html": "/ReactedPortfolio/index.html",
-    "precache-manifest.624348d4c391781d00fd92be645c5a5c.js": "/ReactedPortfolio/precache-manifest.624348d4c391781d00fd92be645c5a5c.js",
+    "precache-manifest.949e7f47caf68d25469a70ea3dae7737.js": "/ReactedPortfolio/precache-manifest.949e7f47caf68d25469a70ea3dae7737.js",
     "service-worker.js": "/ReactedPortfolio/service-worker.js",
     "static/css/2.bba53750.chunk.css.map": "/ReactedPortfolio/static/css/2.bba53750.chunk.css.map",
     "static/css/main.97f268fd.chunk.css.map": "/ReactedPortfolio/static/css/main.97f268fd.chunk.css.map",
-    "static/js/2.8f9a07dd.chunk.js.LICENSE.txt": "/ReactedPortfolio/static/js/2.8f9a07dd.chunk.js.LICENSE.txt",
+    "static/js/2.5521b6f2.chunk.js.LICENSE.txt": "/ReactedPortfolio/static/js/2.5521b6f2.chunk.js.LICENSE.txt",
     "static/media/index.css": "/ReactedPortfolio/static/media/indianFont.8107f8b7.TTF",
     "static/media/Resume.css": "/ReactedPortfolio/static/media/banner.6d9df851.jpg",
     "static/media/all.css": "/ReactedPortfolio/static/media/fa-solid-900.c2801fb4.svg",
@@ -23,8 +23,8 @@
   "entrypoints": [
     "static/js/runtime-main.ff106e69.js",
     "static/css/2.bba53750.chunk.css",
-    "static/js/2.8f9a07dd.chunk.js",
+    "static/js/2.5521b6f2.chunk.js",
     "static/css/main.97f268fd.chunk.css",
-    "static/js/main.a910e6f7.chunk.js"
+    "static/js/main.bfc6076a.chunk.js"
   ]
 }
