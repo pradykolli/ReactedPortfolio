@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import {
     BrowserRouter as Router,
     Switch,
-    Route
+    Route,
+    Link
 } from "react-router-dom";
 import Game from '../Game/Game';
 import Resume from '../Resume/Resume';
@@ -31,16 +32,16 @@ function NavBar() {
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="mr-auto" navbar>
                             <NavItem>
-                                <NavLink className={styles["navLinks"]} href="/">Home</NavLink>
+                                <Link className={styles["navLinks"]} to="/">Home</Link>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/resume">Resume</NavLink>
+                                <Link to="/resume">Resume</Link>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/game">Game</NavLink>
+                                <Link to="/game">Game</Link>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/contactMe">Contact Me</NavLink>
+                                <Link to="/contactMe">Contact Me</Link>
                             </NavItem>
                         </Nav>
                     </Collapse>
