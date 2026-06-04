@@ -38,14 +38,18 @@ src: url('./Assets/Fonts/goodTimes.ttf')  format('truetype')
   border-radius: 0 0 10px 10px;
     border-bottom: 5px solid #fff;
 }
-.navbar-dark .navbar-nav .nav-link{
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-item a{
   font-weight: 600 !important;
   color: #fff !important;
   font-family: 'SulphurPoint',Arial, Helvetica, sans-serif;
   font-size: 1.4rem;
+  margin-right: 10px;
 }
 .navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link:active{
+.navbar-dark .navbar-nav .nav-link:active,
+.navbar-dark .navbar-nav .nav-item a:hover,
+.navbar-dark .navbar-nav .nav-item a:active,{
  text-decoration: underline;
 }
 .navbar-dark .navbar-brand{

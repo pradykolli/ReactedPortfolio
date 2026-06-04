@@ -33,7 +33,7 @@ function Home() {
                 </Col>
                 <Col md="8">
                     <ContentCards cardTitle = "Hi">
-                        "I'm a Web designer / developer based in Salt Lake City, UT.
+                        "I'm a Frontend Developer based out of Dallas, TX.
                     I'm an experienced software engineer with a demonstrated history of working in the information technology and services industry.
                     Skilled in Html5, Javascript, CSS3, Sass, Bootstrap 2.x-4.x, React, Angular 2.0."
                     </ContentCards>
@@ -73,7 +73,7 @@ function Home() {
                 </Col>
                 <Col md="8">
                     <ContentCards cardTitle = "As a developer">
-                            "Keeping in mind the responsive design and Code reuability,
+                            "Keeping in mind the responsive design and Code reuseability,
                         I've written readable and efficient code while following the company's coding standards.
                         Writing accessible code wherever possible and necessary was well addressed.
                         Worked on multiple frameworks such as React, Node+Ejs, Angular 2.x with Material Design, Bootstrap 2.x-4.x, Microsoft Fabric UI.
