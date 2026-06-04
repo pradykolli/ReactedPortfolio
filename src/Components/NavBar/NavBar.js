@@ -23,7 +23,7 @@ function NavBar() {
     const toggle = () => setIsOpen(!isOpen);
 
     return (
-        <Router>
+        <Router basename="/ReactedPortfolio">
             <div>
                 <Navbar color="dark" dark expand="md">
                     <NavbarBrand >Prady Kolli</NavbarBrand>
@@ -34,13 +34,13 @@ function NavBar() {
                                 <NavLink className={styles["navLinks"]} href="/">Home</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/resume">Resume</NavLink>
+                                <NavLink href="ReactedPortfolio/resume">Resume</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/game">Game</NavLink>
+                                <NavLink href="ReactedPortfolio/game">Game</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/contactMe">Contact Me</NavLink>
+                                <NavLink href="ReactedPortfolio/contactMe">Contact Me</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>
@@ -48,13 +48,13 @@ function NavBar() {
                 {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
                 <Switch>
-                    <Route path="/resume">
+                    <Route path="ReactedPortfolio/resume">
                         <Resume />
                     </Route>
-                    <Route path="/game">
+                    <Route path="ReactedPortfolio/game">
                         <Game />
                     </Route>
-                    <Route path="/contactMe">
+                    <Route path="ReactedPortfolio/contactMe">
                         <ContactMe />
                     </Route>
                     <Route path="/">
