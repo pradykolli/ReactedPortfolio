@@ -34,13 +34,13 @@ function NavBar() {
                                 <NavLink className={styles["navLinks"]} href="/">Home</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="ReactedPortfolio/resume">Resume</NavLink>
+                                <NavLink href="/resume">Resume</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="ReactedPortfolio/game">Game</NavLink>
+                                <NavLink href="/game">Game</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="ReactedPortfolio/contactMe">Contact Me</NavLink>
+                                <NavLink href="/contactMe">Contact Me</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>
