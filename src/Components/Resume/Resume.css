@@ -97,3 +97,9 @@ i{
         margin-top: 360px;
     }
 }
+@media print {
+    .printBtn{
+        display: none;
+        visibility: hidden;
+    }
+}

@@ -1,9 +1,11 @@
 import React from 'react'
-import { Row, Col } from 'reactstrap'
-import StarKit from './StarKit/StarKit'
+import { Row, Col, Button } from 'reactstrap'
 import logo from '../../Assets/Images/logo4.jpg'
 import "./Resume.css"
 function Resume() {
+    const handlePrint = () => {
+        window.print();
+    };
     return (
         <div>
             <Row>
@@ -16,54 +18,35 @@ function Resume() {
                                 <img src={logo} alt="Pradeep Kolli" />
                             </div>
                             <h1 className="nameTitle">Pradeep Kolli</h1>
-                            <p className="description">Front-End Developer</p>
+                            <p className="description">Senior Frontend Engineer</p>
+                            <p className="description">React | TypeScript | Next.js | Frontend Architecture</p>
                         </div>
                         <div className="careerGoalSection">
-                            <h3 className="nameTitle">Career Goals</h3>
-                            <p className="description">"Create applications and websites with the user in mind,
-                            building it with a usable and intuitive user interface experience.
-                            Continually striving to learn new technologies and look for ways to better myself in this rapidly changing industry."</p>
+                            <h3 className="nameTitle">Professional Summary</h3>
+                            <p className="description">Senior Frontend Engineer with 8+ years of experience building scalable, accessible and data-intensive enterprise web applications, with deep production experience in React, JavaScript, TypeScript, Redux and frontend architecture. Strong financial-services and wealth-management background delivering advisor-facing portfolio and holdings applications. Experienced in reusable component systems, custom data grids, REST API integration, state management, automated testing, accessibility, CI/CD and technical leadership. Currently extending this foundation into the modern React ecosystem, including Next.js, TanStack Query, modern E2E testing, Node.js and AI-enabled application patterns.</p>
                         </div>
                         <div className="careerGoalSection">
-                            <h3 className="nameTitle">Core Strengths</h3>
+                            <h3 className="nameTitle">Technical Skills</h3>
                             <ul className="description">
-                                <li>
-                                    <p className="text-left">HTML5</p> 
-                                    <p className="text-right"><StarKit number="5" /></p>
-                                </li>
-                                <li>
-                                    <p className="text-left">CSS3</p> 
-                                    <p className="text-right"><StarKit number="4" /></p>
-                                </li>
-                                <li>
-                                    <p className="text-left">Bootstrap</p> 
-                                    <p className="text-right"><StarKit number="5" /></p>
-                                </li>
-                                <li>
-                                    <p className="text-left">React</p> 
-                                    <p className="text-right"><StarKit number="3" /></p>
-                                </li>
-                                <li>
-                                    <p className="text-left">Angular</p> 
-                                    <p className="text-right"><StarKit number="3" /></p>
-                                </li>
-                                <li>
-                                    <p className="text-left">Javascript</p> 
-                                    <p className="text-right"><StarKit number="4" /></p>
-                                </li>
-                                <li>
-                                    <p className="text-left">JQuery</p> 
-                                    <p className="text-right"><StarKit number="4" /></p>
-                                </li>
+                                <li>Frontend: React, TypeScript, JavaScript (ES6+), Next.js, HTML5, CSS3, SASS, Responsive Design, Accessibility/WCAG 2.1 AA</li>
+                                <li>Architecture &amp; State: Frontend Architecture, Component Architecture, Reusable UI Components, Redux, Context API, TanStack Query, Server-State Management</li>
+                                <li>Testing: Jest, React Testing Library, Enzyme, Unit Testing, E2E Testing, Playwright/Cypress concepts, CI Quality Gates</li>
+                                <li>Backend &amp; APIs: Node.js, RESTful APIs, Axios, .NET Backend Integration, API Integration, Authentication Concepts</li>
+                                <li>Cloud &amp; DevOps: Azure, Jenkins CI/CD, Git, GitHub, NPM, ESLint, Ansible, WiX/MSI Packaging</li>
+                                <li>UI &amp; Data: Chart.js, React-Charts-2, Data Visualization, Data Grids, jsPDF, html2canvas, Aspose, Adobe XD, InVision</li>
+                                <li>AI / Modern Engineering: LLM/API Integration Concepts, AI-assisted application patterns, prompt/response workflows, streaming UX concepts</li>
                             </ul>
+                            <p className="description"><strong>Modern-stack note:</strong> Next.js, TanStack Query, modern E2E testing and AI/LLM application patterns are being actively developed through current hands-on learning/projects; they are not represented as historical production experience.</p>
                         </div>
                         <div className="contactDetails">
                             <h3 className="nameTitle">Contact Details</h3>
                             <div className="description">
                                 <p>Telephone <i className="fas fa-phone"></i> </p><p><a href="tel:+18016716511">+1 (801)-671-6511</a></p>
                                 <p>Email <i className="fas fa-envelope"></i> </p><p><a href="mailto:pradykolli@gmail.com" rel="noopener noreferrer" target="_blank">pradykolli@gmail.com</a></p>
-                                <p>Address <i className="fas fa-home"></i> </p><p>1121 N.College Dr, Apt-56, Maryville MO 64468</p>
-                                <p>GitHub <i className="fab fa-github"></i> </p><p><a href="https://github.com/pradykolli" rel="noopener noreferrer" target="_blank">http://github.com/pradykolli</a></p>
+                                <p>Location <i className="fas fa-home"></i> </p><p>Mississauga, ON</p>
+                                <p>LinkedIn <i className="fab fa-linkedin"></i> </p><p>Pradeep Kolli</p>
+                                <p>GitHub <i className="fab fa-github"></i> </p><p><a href="https://github.com/pradykolli" rel="noopener noreferrer" target="_blank">Pradykolli</a></p>
+                                <p>Visa Status <i className="fas fa-id-card"></i> </p><p>Canadian Permanent Resident</p>
                             </div>
                         </div>
                     </div>
@@ -71,90 +54,81 @@ function Resume() {
                 {/* Code for the right article part */}
                 <Col md="8" className="rightCol">
                     <div className="employmentHistory">
-                        <h3 className="nameTitle">Employment History</h3>
+                        <h3 className="nameTitle">Professional Experience</h3>
                         <div className="description">
-                            <h4>Northwest Missouri State University. 2018-2019</h4>
-                            <h5><strong>Frontend developer (React). 2018-2019</strong></h5>
-                            <h6>Portfolio<br/>
-                                <i>An exhibition of my knowledge on React framework. This website is totally responsive and cross browser compatible. This consists multiple pages which were composed by many subcomponents. A list of my previous builds and work samples are mentioned under “Resume” Tab. </i>
-                            </h6>
+                            <h4>INFOSYS LTD. — Technology Lead / Senior Software Engineer | March 2020 – Present</h4>
+                            <h5><strong>Client Financials — Global Wealth Management Platform (Bank of America, Plano, TX, USA) | April 2021 – Present</strong></h5>
                             <ul>
-                                <li>Designed and developed responsive front-end screens using React, HTML5, CSS3, JavaScript, and Bootstrap. </li>
-                                <li>Created React JS components and managed State and props.  </li>
-                                <li>Worked on Forms, Events, Keys, Router and Animations. </li>
-                                <li>Worked with the ReactStrap library for the designing purpose while creating the functional components which can be reused in future. </li>
-                                <li>Managed the dependency packages by NPM. </li>
+                                <li>Architected and maintained a client-facing Holdings &amp; Portfolio Management application enabling Financial Advisors to view consolidated household account data across multiple investment product classes.</li>
+                                <li>Designed and delivered responsive React interfaces using JavaScript/TypeScript, HTML5, CSS3 and Bootstrap, emphasizing reusable component architecture and maintainable frontend code.</li>
+                                <li>Engineered a custom high-performance data grid from scratch supporting hierarchical expandable rows, multi-column filtering, sorting, inline edit/delete, row selection, contextual navigation and click-to-trade workflows.</li>
+                                <li>Built a dynamic selection and subtotal engine that calculated real-time totals for arbitrary sets of holdings, supporting advisor-driven portfolio analysis.</li>
+                                <li>Developed reusable summary widgets and portfolio visualizations using Chart.js and React-Charts-2 for account balances and portfolio composition.</li>
+                                <li>Managed application state using Redux and Context API and integrated RESTful backend services through Axios to deliver live account and portfolio data.</li>
+                                <li>Implemented data-export workflows including Web API exports, Excel generation with Aspose, and client-side PDF generation using jsPDF and html2canvas.</li>
+                                <li>Maintained frontend quality with NPM and ESLint and supported Jenkins CI/CD pipelines, release readiness, build troubleshooting and production support.</li>
+                                <li>Contributed to enterprise deployment tooling through WiX/MSI packaging and Ansible-based environment provisioning.</li>
+                                <li>Participated in architecture discussions, code reviews and technical mentoring, helping establish frontend engineering standards across distributed teams.</li>
                             </ul>
                         </div>
                         <div className="description">
-                            <h4>Northwest Missouri State University. 2018-2019</h4>
-                            <h5><strong>Frontend developer (React). 2018-2019</strong></h5>
-                            <h6>ShoppingList <a href="https://pradystoshoplist.herokuapp.com/">https://pradystoshoplist.herokuapp.com/</a><br/>
-                                <i>A React application to add and delete items from your “To shop” list. Best usage: Groceries, Holiday Season Shopping list etc.</i>
-                            </h6>
+                            <h5><strong>SSP — Self Service Portal (Regions Bank, Remote, TX, USA) | September 2020 – March 2021</strong></h5>
                             <ul>
-                                <li>Developed webpages using HTML5, CSS3, JavaScript, jQuery, ReactJS, NodeJS. </li>
-                                <li>Worked with Redux while working with the CRUD operations like GET, POST, PUT and DELETE methods</li>
-                                <li>Built Interactive Lists from the scratch without using any library to delete and edit an existing item in the list.</li>
-                                <li>Developed MERN Stack from scratch including Mongo DB server (Mongo Atlas Connector) setup and Express JS server development.</li>
-                                <li>Worked with the ReactStrap library for the designing purpose.</li>
-                                <li>Designed and implemented server-side RESTful web services using NodeJS and Express JS and handled communication to the client side (React JS) using JSON.</li>
+                                <li>Established application boilerplate and built reusable components using React, JSX, Node.js and styled-components.</li>
+                                <li>Implemented React Hooks including useState and useEffect and used Context API for shared application data.</li>
+                                <li>Developed SASS-based styling and integrated reusable form controls, including date and phone-number components.</li>
+                                <li>Implemented session-timeout behavior based on page sensitivity, including automatic logout and appropriate navigation.</li>
+                                <li>Worked within Agile/Scrum delivery practices including sprint planning, backlog management, story estimation and daily ceremonies.</li>
                             </ul>
                         </div>
                         <div className="description">
-                            <h4>Infosys</h4>
-                            <h5><strong>UI/UX developer - Senior Systems Engineer. 2016-2018</strong></h5>
+                            <h5><strong>WMAP Discovery (UBS, Remote, TX, USA) | May 2020 – September 2020</strong></h5>
                             <ul>
-                                <li>Designed and developed multiple websites for our client <strong>Tikit Ltd.</strong>, who is a software provider for major law firms in the United Kingdom.</li> 
-                                <li>Used the latest <strong>Bootstrap</strong> frameworks for most of the websites and followed company standards.</li>   
-                                <li>Implemented <strong>Responsive Web Design</strong> to make various websites adapt to multiple devices supporting all the possible resolutions.</li> 
-                                <li>Implemented <strong>SASS, LESS</strong> in a couple of my websites making it easy to code and reduce code redundancy.</li> 
-                                <li>Used <strong>Fabric UI</strong> framework for developing a document maintenance plugin which works with <strong>Microsoft Word</strong> and <strong>Office 365</strong>.</li> 
-                                <li>Strong knowledge on <strong>Bootstrap2 and above, HTML5, CSS3</strong>. </li> 
-                                <li>All the websites made were <strong>Accessibility</strong> ready and adhere to WAC guideline A and AA.</li> 
-                                <li>Set up frequent meetings with the stake holders for their inputs during the design phase of UX.</li> 
-                                <li>Used <strong>Axure</strong> to design layouts for wireframes and mock screens. After approval from the client, the same were referred and developed into code.   </li> 
-                                <li>Migrated an existing bootstrap 2 project to bootstrap 3 which was 60% code change but achieved it within the strict timelines. </li> 
-                                <li>Performed rigorous testing on all the available devices (MAC, Iphone5, 6, 6+, Android Nexus5, Samsung devices, Android Tab, IPad, IPadMini) and browsers (Safari, Chrome, Internet Explorer, Edge, Opera) before delivering the code to the testing team. </li> 
-                                <li>Gained a little bit of knowledge in <strong>Typescript</strong> as well as <strong>Angular 5.0</strong> during the time of code integration from raw HTML’s into Angular components.</li>
+                                <li>Established application boilerplate and built reusable React components including floating containers and flexible data tables.</li>
+                                <li>Used TypeScript for strict typing and improved frontend maintainability.</li>
+                                <li>Implemented BEM-based CSS conventions and pixel-accurate interfaces from approved UX designs.</li>
+                                <li>Developed Jest/Enzyme unit tests and achieved 85% coverage across branches, statements, functions and lines.</li>
+                                <li>Prototyped Azure Cognitive Services integrations and reusable React components for speech-to-text capabilities.</li>
+                                <li>Participated in frontend architecture discussions, sprint planning and technical coordination with business and engineering stakeholders.</li>
+                            </ul>
+                        </div>
+                        <div className="description">
+                            <h4>INFOSYS LTD. — Software Engineer (Chandigarh, India) | December 2015 – June 2018</h4>
+                            <h5><strong>Tikit Carpediem — Law Technology Web Applications</strong></h5>
+                            <ul>
+                                <li>Designed and developed responsive web applications for a leading UK legal-technology software provider serving major law firms.</li>
+                                <li>Built responsive interfaces using Bootstrap, HTML5, CSS3, SASS and LESS with emphasis on maintainable, reusable styling.</li>
+                                <li>Developed a Microsoft Word/Office 365 document-maintenance plugin using Fabric UI.</li>
+                                <li>Delivered accessibility-ready applications aligned with WCAG A/AA requirements and validated behavior across devices and major browsers.</li>
+                                <li>Collaborated with stakeholders during UX/design phases and translated Adobe XD wireframes and mockups into production interfaces.</li>
+                                <li>Acted as team lead for three months during a leadership transition and coordinated timelines for a major framework migration.</li>
+                                <li>Led a Bootstrap 2-to-3 migration involving substantial code changes while meeting strict delivery timelines.</li>
                             </ul>
                         </div>
                     </div>
                     <div className="academicHistory">
-                        <h3 className="nameTitle">Academic History</h3>
+                        <h3 className="nameTitle">Selected Modernization Projects</h3>
                         <div className="description">
-                            <h5>Northwest Missouri State University, Maryville, MO, USA</h5>
-                            <h5><strong>Master of Science, Applied Computer Science, 3.9/4.0</strong></h5>
-                        </div>
-                        <div className="description">
-                            <h5>School of Information Technology and Engineering (SITE), VIT University, Vellore, TN, India</h5>
-                            <h5><strong>Master of Science (Integrated), Software Engineering, May 2015, GPA: 3.5/4.0</strong></h5>
+                            <h5><strong>Portfolio Engineering Lab — Current Learning &amp; Hands-on Projects</strong></h5>
+                            <ul>
+                                <li>Building a production-style wealth-management dashboard using Next.js, React, TypeScript, TanStack Query, REST APIs and accessible reusable components to demonstrate modern frontend architecture.</li>
+                                <li>Developing a hands-on AI financial-assistant prototype exploring LLM API integration, streaming responses, structured outputs, conversation workflows and responsible AI application patterns.</li>
+                                <li>Adding modern testing and delivery practices including React Testing Library/Playwright, linting, type checking and CI-oriented quality gates.</li>
+                            </ul>
                         </div>
                     </div>
                     <div className="academicHistory">
-                        <h3 className="nameTitle">Personal Skill Set</h3>
+                        <h3 className="nameTitle">Education</h3>
                         <div className="description">
                             <ul>
-                                <li>Strong willingness to learn new skills and abilities and observe perception.</li>
-                                <li>Excellent problem solving and Analytical Skills.</li>	
-                                <li>Strong team player. Ability to adhere to tight deadlines and meeting all deliverables.</li>
-                                <li>Initiative for taking new responsibilities and high Interpersonal skills. </li>
-                                <li>Good Leadership Qualities.</li>
+                                <li>Master of Science, Applied Computer Science — Northwest Missouri State University, Maryville, MO, USA | GPA: 3.9/4.0</li>
+                                <li>Master of Science (Integrated), Software Engineering — VIT University, Vellore, India | May 2015 | GPA: 3.5/4.0</li>
                             </ul>
+                            <Button className='secondary printBtn' onClick={handlePrint}>
+                                <i className="fas fa-print"></i> Print Resume
+                            </Button>
                         </div>
-                    </div>
-                    <div className="previousProjects">
-                        <h3 className="nameTitle">Previous Builds</h3>
-                        <div className="description">
-                            <ul>
-                                <li><a href="https://pradykolli.github.io/BuildingWebapp-MDB/" title="https://pradykolli.github.io/BuildingWebapp-MDB/" rel="noopener noreferrer" target="_blank">Building Web Apps - Website using a Material Design Bootstrap</a></li>
-                                <li><a href="https://pradykolli.github.io/portfolio/index.html" title="https://pradykolli.github.io/portfolio/index.html" rel="noopener noreferrer" target="_blank">Portfolio - Website using HTML, CSS, JS, JQuery</a></li>
-                                <li><a href="https://pradykolli.github.io/GuestIn/index.html" title="https://pradykolli.github.io/GuestIn/index.html" rel="noopener noreferrer" target="_blank">GuestIn - Website using HTML, CSS, JS, JQuery, Bootsrap 4.0</a></li>
-                                <li><a href="https://pradystoshoplist.herokuapp.com/" title="https://pradystoshoplist.herokuapp.com/" rel="noopener noreferrer" target="_blank">ShoppingToDoList - Website using MERN Stack.</a></li>
-                                <li><a href="https://kolli-portfolio.herokuapp.com/" title="https://kolli-portfolio.herokuapp.com/" rel="noopener noreferrer" target="_blank">Potfolio - Website using Ejs, Express, Node.</a></li>
-                                <li><a href="https://fullstack-ejs.herokuapp.com/" title="https://fullstack-ejs.herokuapp.com/" rel="noopener noreferrer" target="_blank">EmptyYourPockets - Website using Ejs, Express, Node, MDB.</a></li>
-                            </ul>
-                        </div>
+                        
                     </div>
                 </Col>
             </Row>
