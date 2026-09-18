@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { Container, Row, Col } from 'reactstrap';
 import NavBar from './Components/NavBar/NavBar';
+import ChatBot from './Components/Chatbot/ChatBot';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
           <NavBar></NavBar>
         </Col>
       </Row>
+      <ChatBot></ChatBot>
     </Container>
   );
 }
